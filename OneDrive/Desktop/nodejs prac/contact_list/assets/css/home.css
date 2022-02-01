@@ -1,3 +1,40 @@
 body{
+    margin: 0;
+    font-family: sans-serif;
+}
+#page-heading{
     text-align: center;
+    margin-top: 25px;
+    color: gray;
+}
+#list{
+    text-align: center;
+    background-color: rgb(53, 47, 53);
+     width: 50%;
+     color: white;
+     
+}
+#list:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#ul{
+    margin-left: 30%;
+    list-style-type: none;
+}
+form{
+    text-align: center;
+  
+}
+input{
+    border: none;
+}
+button{
+    background-color: gray;
+    color: white;
 }

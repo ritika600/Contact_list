@@ -3,24 +3,27 @@
         <title>
             <%= title %>
         </title>
-     <link rel="stylesheet" href="/css">
+     
+     <script src="https://kit.fontawesome.com/743557890a.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="/css/home.css">
     </head>
     <body>
-        <h1>Contact List</h1>
+        <h1 id="page-heading"><i class="fas fa-address-book"></i> My Contacts List</h1>
         <div>
-            <ul>
+            <ul id="ul">
                 <% for(let i of contact_list){%>
-                 <li>
-                     <p><%= i.name %></p>
-                     <p><%= i.phone %></p>
+                 <li id="list">
+                     <div id="div"><span ><%= i.name %></span><span><%= i.phone %></span></div>
+                     
                  </li>
                     <% }%>
             </ul>
-        </div>
+        </div><br/>
         <form action="/create-contact" method="POST">
             <input type="text" name="name" placeholder="enter name" required>
             <input type="number" name="phone" placeholder="enter phone no">
             <button type="submit"> Add contact</button>
         </form>
+        <script type="text/javascript" src="/js/home.js"></script>
     </body>
 </html>

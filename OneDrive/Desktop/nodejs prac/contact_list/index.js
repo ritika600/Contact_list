@@ -8,21 +8,16 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'))
 app.use(express.urlencoded());
 app.use(express.static('assets'))
-// middleware1
-app.use(function(req,res,next){
-    req.namemy="rits";
-    next();
-});
-// middleware2
-app.use(function(req,res,next){
-    console.log("mid2",req.namemy);
-    next();
-});
-// middleware3
-app.use(function(req,res,next){
-    console.log("mid3");
-    next();
-});
+// // middleware1
+// app.use(function(req,res,next){
+//     req.namemy="rits";
+//     next();
+// });
+// // middleware2
+// app.use(function(req,res,next){
+//     console.log("mid2",req.namemy);
+//     next();
+// });
 
 var contactList = [
     {
