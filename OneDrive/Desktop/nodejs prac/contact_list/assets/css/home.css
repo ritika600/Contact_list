@@ -12,6 +12,7 @@ body{
     background-color: rgb(53, 47, 53);
      width: 50%;
      color: white;
+     padding: 2%;
      
 }
 #list:hover{
@@ -21,10 +22,10 @@ body{
 #div{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 #ul{
-    margin-left: 30%;
+    margin-left: 28.2%;
     list-style-type: none;
 }
 form{
@@ -37,4 +38,7 @@ input{
 button{
     background-color: gray;
     color: white;
+}
+.icon{
+    color: wheat;
 }
