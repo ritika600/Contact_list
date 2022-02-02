@@ -42,3 +42,6 @@ button{
 .icon{
     color: wheat;
 }
+.icon:hover{
+    color: red;
+}
